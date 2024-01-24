@@ -1,10 +1,15 @@
 package com.kodilla.abstracts.homework;
 
 public class MediumCircle extends Shape {
-    public MediumCircle() {super (100)};
+    public MediumCircle() {super (100);}
 
     @Override
-    public void giveSize() {
-        System.out.println("Medium Circle");
+    public double circlePerimeter() {
+        return 2 * PI * getRadius();
+    }
+
+    @Override
+    public double circleArea() {
+        return PI * getRadius() * getRadius();
     }
 }

@@ -1,10 +1,15 @@
 package com.kodilla.abstracts.homework;
 
 public class HugeCircle extends Shape {
-    public HugeCircle() {super (1000)};
+    public HugeCircle() {super (1000);}
 
     @Override
-    public void giveSize() {
-        System.out.println("Huge Circle");
+    public double circlePerimeter() {
+        return 2 * PI * getRadius();
+    }
+
+    @Override
+    public double circleArea() {
+        return PI * getRadius() * getRadius();
     }
 }
