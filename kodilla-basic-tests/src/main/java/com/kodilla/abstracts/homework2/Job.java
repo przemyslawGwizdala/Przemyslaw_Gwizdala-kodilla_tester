@@ -1,4 +1,4 @@
-package com.kodilla.abstracts.homework2;
+/* package com.kodilla.abstracts.homework2;
 
 public abstract class Job {
 
@@ -6,3 +6,4 @@ public abstract class Job {
     public abstract String responsibilities();
     //info o obowiązkach
 }
+*/

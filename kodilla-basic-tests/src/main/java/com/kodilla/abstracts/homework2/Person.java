@@ -1,7 +1,8 @@
-package com.kodilla.abstracts.homework2;
+/*  com.kodilla.abstracts.homework2;
 
 public class Person {
     private String firstName;
     private int age;
     private String job;
 }
+*/

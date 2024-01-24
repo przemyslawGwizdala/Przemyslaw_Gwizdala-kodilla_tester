@@ -1,6 +1,6 @@
 import java.sql.SQLOutput;
 
-public class HelloWorld {
+public class FirstClass {
     public static void main(String[] args) {
         String MojeImie = "Przemyslaw";
         int MojWiek = 25;
