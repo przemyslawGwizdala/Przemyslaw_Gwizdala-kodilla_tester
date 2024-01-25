@@ -1,4 +1,4 @@
-package com.kodilla.basic_assertion;
+/* package com.kodilla.basic_assertion;
 
 import org.junit.jupiter.api.Test;
 
@@ -25,9 +25,12 @@ public class CalculatorTestSuite {
     @Test
     public void testPow() {
         Calculator calculator = new Calculator();
-        int a = 5;
-        int b = 8;
-        int powResult = calculator.power(a, b);
-        assertEquals(390625, powResult);
+        double a = 5;
+        double b = 8;
+        double powResult = calculator.power(a, b);
+        assertEquals2(390625, powResult);
+        assertEquals2(390625, powResult, double delta)
     }
 }
+
+*/

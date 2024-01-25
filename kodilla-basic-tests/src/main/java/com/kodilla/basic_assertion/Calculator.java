@@ -1,4 +1,4 @@
-package com.kodilla.basic_assertion;
+/* package com.kodilla.basic_assertion;
 
 public class Calculator {
     public int sum(int a, int b) {
@@ -9,7 +9,8 @@ public class Calculator {
         return a - b;
     }
 
-    public int power(int a, int b){
-        return (int)Math.pow(a, b);
+    public int power(double a, double b){
+        return Math.pow(a, b);
     }
 }
+*/

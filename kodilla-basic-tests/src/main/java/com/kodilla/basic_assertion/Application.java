@@ -1,6 +1,6 @@
 package com.kodilla.basic_assertion;
 
-public class Application {
+/* public class Application {
     public static void main(String[] args) {
         Calculator calculator = new Calculator();
         int a = 5;
@@ -26,7 +26,7 @@ public class Application {
         }
 
 
-        boolean correct3 = ResultChecker.assertEquals(390625, powerResult);
+        boolean correct3 = ResultChecker.assertEquals2(390625, powerResult, double delta);
         if (correct3) {
             System.out.println("Metoda power działa poprawnie dla liczb " + a + " i " + b);
         } else {
@@ -34,3 +34,4 @@ public class Application {
         }
     }
 }
+*/
