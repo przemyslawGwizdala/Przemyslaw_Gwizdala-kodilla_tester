@@ -1,13 +1,13 @@
 package com.kodilla.basic_assertion;
 
-/* public class Application {
+public class Application {
     public static void main(String[] args) {
         Calculator calculator = new Calculator();
         int a = 5;
         int b = 8;
         int sumResult = calculator.sum(a, b);
         int subtractResult = calculator.subtract(a, b);
-        int powerResult = calculator.power(a, b);
+        double powerResult = calculator.power(a, b);
 
 
         boolean correct = ResultChecker.assertEquals(13, sumResult);
@@ -26,7 +26,7 @@ package com.kodilla.basic_assertion;
         }
 
 
-        boolean correct3 = ResultChecker.assertEquals2(390625, powerResult, double delta);
+        boolean correct3 = ResultChecker.assertEquals2(390625, powerResult);
         if (correct3) {
             System.out.println("Metoda power działa poprawnie dla liczb " + a + " i " + b);
         } else {
@@ -34,4 +34,3 @@ package com.kodilla.basic_assertion;
         }
     }
 }
-*/
