@@ -1,14 +1,13 @@
-/* package com.kodilla.abstracts.homework2;
+package com.kodilla.abstracts.homework2;
 
 public class Animator extends Job{
-    @Override
-    public int salary() {
-        return 0;
+
+    public Animator() {
+        super(3000, "Working with PC, quality control, rigging");
     }
 
     @Override
-    public String responsibilities() {
-        return null;
+    public String job() {
+        return getResponsibilities();
     }
 }
- */

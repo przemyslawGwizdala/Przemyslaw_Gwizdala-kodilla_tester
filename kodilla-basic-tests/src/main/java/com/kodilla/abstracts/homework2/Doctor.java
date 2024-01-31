@@ -1,14 +1,13 @@
-/* package com.kodilla.abstracts.homework2;
+package com.kodilla.abstracts.homework2;
 
 public class Doctor extends Job{
-    @Override
-    public int salary() {
-        return 0;
+
+    public Doctor() {
+        super(8000, "Health examination, medicine selection");
     }
 
     @Override
-    public String responsibilities() {
-        return null;
+    public String job() {
+        return getResponsibilities();
     }
 }
- */

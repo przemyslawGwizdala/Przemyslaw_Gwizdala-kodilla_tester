@@ -3,6 +3,7 @@ public class OperatingSystemAplication {
     public static void main(String[] args) {
         OperatingSystem operatingsystem = new OperatingSystem(2004);
         operatingsystem.turnOn();
+        operatingsystem.turnOff();
 
         Device device = new Device(2015);
         device.displayProductionYear();

@@ -29,7 +29,7 @@ public class CalculatorTestSuite {
         double b = 8;
         double powResult = calculator.power(a, b);
         assertEquals2(390625, powResult);
-        assertEquals2(390625, powResult, double delta)
+        assertEquals2(390625, powResult, 0.01)
     }
 }
 

@@ -1,14 +1,13 @@
-/* package com.kodilla.abstracts.homework2;
+package com.kodilla.abstracts.homework2;
 
 public class Builder extends Job{
-    @Override
-    public int salary() {
-        return 0;
+
+    public Builder() {
+        super(2400, "Manual work, quality control");
     }
 
     @Override
-    public String responsibilities() {
-        return null;
+    public String job() {
+        return getResponsibilities();
     }
 }
- */

@@ -5,6 +5,10 @@ public class Device extends OperatingSystem {
     public void turnOn() {
         System.out.println("Turn on for FIVE minutes");
     }
+    @Override
+    public void turnOff() {
+        System.out.println("Turn off for FIVE minutes");
+    }
     public Device(int year) {
         super(year);
     }
