@@ -3,18 +3,27 @@ package com.kodilla.collections.adv.exercises.homework;
 import com.kodilla.collections.adv.exercises.dictionary.EnglishWord;
 
 import java.util.Collections;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
+import java.util.stream.Collectors;
 
 public class FlightFinder {
-    Map<String, List<Flight>> flightfinder = new HashMap<>();
+    List<Flight> flightfinder = FlightRepository.getFlightsTable();
     public List<Flight> findFlightsFrom(String departure){
-        return flightfinder.getOrDefault(departure, Collections.emptyList());
+        List<Flight> from = flightfinder
+                .stream()
+                .filter(flight -> flight.getDeparture().equals(departure))
+                .collect(Collectors.toList());
+
+        return from;
     }
 
-    public List<Flight> findFlightsTo(String arrival) {
-        return flightfinder.getOrDefault(arrival, Collections.emptyList());
+    public List<Flight> findFlightsTo(String arrival){
+        List<Flight> to = flightfinder
+                .stream()
+                .filter(flight -> flight.getArrival().equals(arrival))
+                .collect(Collectors.toList());
+
+        return to;
     }
-    public int size() { return flightfinder.size(); }
+
 }

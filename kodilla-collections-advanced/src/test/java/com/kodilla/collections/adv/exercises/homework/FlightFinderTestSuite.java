@@ -18,7 +18,7 @@ class FlightFinderTestSuite {
         // when
         List<Flight> findFlightsFrom = flightfinder.findFlightsFrom("Kraków");
         // then
-        assertEquals(2,flightfinder.size());
+        assertEquals(2,findFlightsFrom.size());
     }
 
     @Test
@@ -26,8 +26,8 @@ class FlightFinderTestSuite {
         // given
         FlightFinder flightfinder = new FlightFinder();
         // when
-        List<Flight> findFlightsFrom = flightfinder.findFlightsTo("Warszawa");
+        List<Flight> findFlightsTo = flightfinder.findFlightsTo("Warszawa");
         // then
-        assertEquals(3,flightfinder.size());
+        assertEquals(3,findFlightsTo.size());
     }
 }
