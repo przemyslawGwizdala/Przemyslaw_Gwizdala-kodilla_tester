@@ -2,12 +2,14 @@ package com.kodilla.abstracts.homework2;
 
 public class Doctor extends Job{
 
-    public Doctor() {
-        super(8000, "Health examination, medicine selection");
+    public Doctor(double salary, String responsibilities) {
+        super(salary, responsibilities);
     }
 
     @Override
-    public String job() {
-        return getResponsibilities();
+    public void displayJobDetails() {
+        System.out.println("Job: Doctor");
+        System.out.println("Salary: $" + getSalary());
+        System.out.println("Responsibilities: " + getResponsibilities());
     }
 }

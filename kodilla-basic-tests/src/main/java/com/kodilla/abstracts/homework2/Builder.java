@@ -2,12 +2,14 @@ package com.kodilla.abstracts.homework2;
 
 public class Builder extends Job{
 
-    public Builder() {
-        super(2400, "Manual work, quality control");
+    public Builder(double salary, String responsibilities) {
+        super(salary, responsibilities);
     }
 
     @Override
-    public String job() {
-        return getResponsibilities();
+    public void displayJobDetails() {
+        System.out.println("Job: Builder");
+        System.out.println("Salary: $" + getSalary());
+        System.out.println("Responsibilities: " + getResponsibilities());
     }
 }

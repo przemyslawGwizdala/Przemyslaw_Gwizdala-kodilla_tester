@@ -1,24 +1,20 @@
 package com.kodilla.abstracts.homework2;
 
 public class Application {
-    // Dodaj metodę, która wyświetli obowiązki danej osoby w pracy
     public static void main(String[] args) {
 
-        Animator animator = new Animator();
-        String result = animator.job();
+        Animator animator = new Animator(5000,"Work with PC, Rigging");
+        Builder builder = new Builder(4000, "Manual work, lifting weights");
+        Doctor doctor = new Doctor(9000, "Health examination, medicine selection");
 
-        Builder builder = new Builder();
-        String result1 = builder.job();
+        Person person = new Person("Antek", 40, animator);
+        Person person1 = new Person("Bob", 32, builder);
+        Person person2 = new Person("Damian", 50, doctor);
 
-        Doctor doctor = new Doctor();
-        String result2 = doctor.job();
-
-        Person person = new Person("Antek", 40, "Animator");
-        Person person1 = new Person("Bob", 32, "Builder");
-        Person person2 = new Person("Damian", 50, "Doctor");
-        System.out.println("Name: " + person.getFirstName() + "     " + "Responsibilities: " + result);
-        System.out.println("Name: " + person1.getFirstName() + "       " + "Responsibilities: " + result1);
-        System.out.println("Name: " + person2.getFirstName() + "    " + "Responsibilities: " + result2);
-
+        person.displayJobResponsibilities();
+        System.out.println(" ");
+        person1.displayJobResponsibilities();
+        System.out.println(" ");
+        person2.displayJobResponsibilities();
     }
 }

@@ -14,5 +14,5 @@ public abstract class Job {
     public String getResponsibilities() {
         return responsibilities;
     }
-     public abstract String job();
+     public abstract void displayJobDetails();
 }
